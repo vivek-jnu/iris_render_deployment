@@ -5,8 +5,7 @@ import joblib
 from sklearn.datasets import load_iris
 
 # Load the trained model
-model_path = joblib.load("logistic_model.pkl")
-with open(model_path, "rb") as f:
+with open("logistic_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 target_names = load_iris().target_names
