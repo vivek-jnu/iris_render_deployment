@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.datasets import load_iris
 
 # Load the trained model
-model_path = r"C:\Users\Vivek Chauhan\OneDrive\Desktop\iris\logistic_model.pkl"
+model_path = pickle.load("logistic_model.pkl")
 with open(model_path, "rb") as f:
     model = pickle.load(f)
 
