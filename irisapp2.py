@@ -1,10 +1,11 @@
 import streamlit as st
 import pickle
 import numpy as np
+import joblib 
 from sklearn.datasets import load_iris
 
 # Load the trained model
-model_path = pickle.load("logistic_model.pkl")
+model_path = joblib.load("logistic_model.pkl")
 with open(model_path, "rb") as f:
     model = pickle.load(f)
 
